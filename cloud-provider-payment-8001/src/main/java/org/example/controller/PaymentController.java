@@ -32,7 +32,7 @@ public class PaymentController {
     @Value("${server.port}")
     private String SERVER_PORT;
 
-    @PostMapping(value = "/create",produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/create")
     public CommonResult create(@RequestBody Payment payment) {
         int result = paymentService.create(payment);
         log.info("插入数据的ID:\t" + payment.getId());
