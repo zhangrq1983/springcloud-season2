@@ -1,6 +1,7 @@
 package org.example.controller;
 
 import org.example.entities.CommonResult;
+import org.example.entities.Dept;
 import org.example.entities.Payment;
 import org.example.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
@@ -36,6 +37,18 @@ public class PaymentController {
     public CommonResult create(@RequestBody Payment payment) {
         int result = paymentService.create(payment);
         log.info("插入数据的ID:\t" + payment.getId());
+        log.info("插入结果：" + result);
+        if (result > 0) {
+            return new CommonResult(200, "插入数据成功,serverport:" + SERVER_PORT, result);
+        } else {
+            return new CommonResult(444, "插入数据失败", null);
+        }
+    }
+
+    @RequestMapping(value = "/createDept")
+    public CommonResult create(@RequestBody Dept dept) {
+        int result = paymentService.create(dept);
+        log.info("插入数据的ID:\t" + dept.getId());
         log.info("插入结果：" + result);
         if (result > 0) {
             return new CommonResult(200, "插入数据成功,serverport:" + SERVER_PORT, result);

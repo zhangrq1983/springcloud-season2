@@ -1,6 +1,7 @@
 package org.example.service.impl;
 
 import org.example.dao.PaymentDao;
+import org.example.entities.Dept;
 import org.example.entities.Payment;
 import org.example.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,11 @@ public class PaymentServiceImpl implements PaymentService {
     @Override
     public int create(Payment payment) {
         return paymentDao.create(payment);
+    }
+
+    @Override
+    public int create(Dept dept) {
+        return paymentDao.create(dept);
     }
 
     @Override

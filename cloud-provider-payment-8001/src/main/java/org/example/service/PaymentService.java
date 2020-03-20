@@ -1,6 +1,7 @@
 package org.example.service;
 
 import org.apache.ibatis.annotations.Param;
+import org.example.entities.Dept;
 import org.example.entities.Payment;
 
 /**
@@ -10,7 +11,10 @@ import org.example.entities.Payment;
  * @create: 2020/3/5 18:18
  **/
 public interface PaymentService {
+
     int create(Payment payment);
+
+    int create(Dept dept);
 
     Payment getPaymentById(@Param("id") Long id);
 }
