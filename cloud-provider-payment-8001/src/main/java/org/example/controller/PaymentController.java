@@ -1,7 +1,6 @@
 package org.example.controller;
 
 import org.example.entities.CommonResult;
-import org.example.entities.Dept;
 import org.example.entities.Payment;
 import org.example.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
@@ -33,6 +32,15 @@ public class PaymentController {
     @Value("${server.port}")
     private String SERVER_PORT;
 
+    /**
+     * 1.方法参数没有加@RequestBody，直接用postman做测试是可以直接插入数据库的，
+     * 但是消费者rest调用此方法时会出现问题，数据插入数据库了，字段是null的问题
+     * 2.方法参数加@RequestBody，直接用postman做测试会报错，
+     * Required request body is missing: public org.example.entities.CommonResult org.example.controller.PaymentController.create(org.example.entities.Payment)",
+     * 消费者rest调用此方法正常
+     * @param payment
+     * @return
+     */
     @PostMapping(value = "/create")
     public CommonResult create(@RequestBody Payment payment) {
         int result = paymentService.create(payment);
@@ -45,10 +53,19 @@ public class PaymentController {
         }
     }
 
-    @RequestMapping(value = "/createDept")
-    public CommonResult create(@RequestBody Dept dept) {
-        int result = paymentService.create(dept);
-        log.info("插入数据的ID:\t" + dept.getId());
+    /**
+     * 1.方法参数没有加@RequestBody，直接用postman做测试是可以直接插入数据库的，
+     * 但是消费者rest调用此方法时会出现问题，数据插入数据库了，字段是null的问题
+     * 2.方法参数加@RequestBody，直接用postman做测试会报错，
+     * Required request body is missing: public org.example.entities.CommonResult org.example.controller.PaymentController.create(org.example.entities.Payment)",
+     * 消费者rest调用此方法正常
+     * @param payment
+     * @return
+     */
+    @PostMapping(value = "/createPayment")
+    public CommonResult createPayment(Payment payment) {
+        int result = paymentService.create(payment);
+        log.info("插入数据的ID:\t" + payment.getId());
         log.info("插入结果：" + result);
         if (result > 0) {
             return new CommonResult(200, "插入数据成功,serverport:" + SERVER_PORT, result);
@@ -62,7 +79,7 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentById(id);
         log.info("***查询结果：" + payment);
         if (payment != null) {
-            return new CommonResult(200, "查询数据成功,serverport:" + SERVER_PORT, payment);
+            return new CommonResult(200, "查询数据成功,serverport:" + SERVER_PORT + " O(∩_∩)O哈哈~", payment);
         } else {
             return new CommonResult(444, "没有对应记录", null);
         }

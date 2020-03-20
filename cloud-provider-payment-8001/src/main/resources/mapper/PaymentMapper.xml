@@ -6,8 +6,8 @@
         <id column="serial" property="serial" jdbcType="VARCHAR"/>
     </resultMap>
 
-    <insert id="create" parameterType="Dept" useGeneratedKeys="true" keyProperty="id">
-            insert into payment(serial) values (#{dept_name})
+    <insert id="create" parameterType="Payment" useGeneratedKeys="true" keyProperty="id">
+            insert into payment(serial) values (#{serial})
     </insert>
 
     <select id="getPaymentById" parameterType="Long" resultMap="BaseResultMap">

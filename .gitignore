@@ -1,3 +1,5 @@
 /.idea/
-/cloud-provider-payment-8001/target/
+/cloud-consumer-order-80/target/
 /cloud-api-commons/target/
+/cloud-provider-payment-8001/target/
+/cloud-eureka-server-7001/target/

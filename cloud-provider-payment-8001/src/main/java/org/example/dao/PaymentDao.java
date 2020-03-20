@@ -2,7 +2,6 @@ package org.example.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.example.entities.Dept;
 import org.example.entities.Payment;
 
 /**
@@ -15,8 +14,6 @@ import org.example.entities.Payment;
 public interface PaymentDao {
 
     int create(Payment payment);
-
-    int create(Dept dept);
 
     Payment getPaymentById(@Param("id") Long id);
 }
