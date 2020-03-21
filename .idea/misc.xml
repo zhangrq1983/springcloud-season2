@@ -10,6 +10,9 @@
         <option value="$PROJECT_DIR$/cloud-eureka-server-7002/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider-payment-8002/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider-payment-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-zookeeper-8004/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-comsumer-zookeeper-80/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer-zookeeper-80/pom.xml" />
       </list>
     </option>
   </component>

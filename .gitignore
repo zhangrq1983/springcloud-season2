@@ -4,3 +4,5 @@
 /cloud-eureka-server-7001/target/
 /cloud-eureka-server-7002/target/
 /cloud-provider-payment-8002/target/
+/cloud-provider-zookeeper-8004/target/
+/cloud-consumer-zookeeper-80/target/
