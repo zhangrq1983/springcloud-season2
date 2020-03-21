@@ -6,3 +6,4 @@
 /cloud-provider-payment-8002/target/
 /cloud-provider-zookeeper-8004/target/
 /cloud-consumer-zookeeper-80/target/
+/.idea/
