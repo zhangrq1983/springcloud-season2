@@ -1,10 +1,8 @@
-package org.example.springcloud.lb;
+package org.example.lb;
 
 //import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.stereotype.Component;
 
-import java.sql.SQLOutput;
-import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**

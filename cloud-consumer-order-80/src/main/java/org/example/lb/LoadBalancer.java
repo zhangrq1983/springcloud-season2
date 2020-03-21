@@ -1,7 +1,6 @@
-package org.example.springcloud.lb;
+package org.example.lb;
 
 //import org.springframework.cloud.client.ServiceInstance;
-import java.util.List;
 
 /**
  * @InterfaceName: LoadBalancer

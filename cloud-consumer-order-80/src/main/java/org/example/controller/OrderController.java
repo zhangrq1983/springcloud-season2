@@ -1,9 +1,8 @@
-package org.example.springcloud.controller;
+package org.example.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.entities.CommonResult;
 import org.example.entities.Payment;
-import org.example.springcloud.lb.LoadBalancer;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.cloud.client.ServiceInstance;
 //import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -12,8 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import java.net.URI;
-import java.util.List;
 
 /**
  * @ClassName: OrderController
@@ -25,8 +22,8 @@ import java.util.List;
 @Slf4j
 public class OrderController {
 
-    private final static String PAYMENT_URL = "http://localhost:8001";//不集群
-//    private final static String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";//集群
+//    private final static String PAYMENT_URL = "http://localhost:8001";//不集群
+    private final static String PAYMENT_URL = "http://PROVIDER-PAYMENT-SERVICE";//集群
 
     @Autowired
     private RestTemplate restTemplate;

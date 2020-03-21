@@ -1,8 +1,10 @@
-package org.example.springcloud;
+package org.example;
 
+import org.myrule.MySelfRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-//import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 /**
  * @ClassName: OrderMain80
@@ -11,7 +13,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @create: 2020/3/5 21:14
  **/
 @SpringBootApplication
-//@EnableEurekaClient
+@EnableEurekaClient
+@RibbonClient(name = "PROVIDER-PAYMENT-SERVICE")
 //@RibbonClient(name = "CLOUD-PAYMENT-SERVICE", configuration = MySelfRule.class)
 public class Consumer_order_80 {
     public static void main(String[] args) {
