@@ -23,9 +23,9 @@ public class OrderZKController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @GetMapping("/payment/zk")
+    @GetMapping("/payment/zookeeper")
     public String get() {
-        String result = restTemplate.getForObject(INVOKE_URL + "/payment/zk", String.class);
+        String result = restTemplate.getForObject(INVOKE_URL + "/payment/zookeeper", String.class);
         return result;
     }
 
