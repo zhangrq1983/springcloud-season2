@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: cloud-consumer-payment
+    name: consumer-payment-client
   cloud:
     consul:
 #      host: 192.168.0.102
