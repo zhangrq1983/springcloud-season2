@@ -1,8 +1,8 @@
 package org.example.lb;
 
-//import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.stereotype.Component;
-
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @create: 2020/3/7 15:55
  **/
 @Component
-public class MyLB/* implements LoadBalancer */{
+public class MyLB implements LoadBalancer {
 
     private AtomicInteger atomicInteger = new AtomicInteger(0);
 
@@ -28,9 +28,9 @@ public class MyLB/* implements LoadBalancer */{
         return next;
     }
 
-//    @Override
-//    public ServiceInstance instances(List<ServiceInstance> serviceInstances) {
-//        int index = getAndIncrement() % serviceInstances.size();
-//        return serviceInstances.get(index);
-//    }
+    @Override
+    public ServiceInstance instances(List<ServiceInstance> serviceInstances) {
+        int index = getAndIncrement() % serviceInstances.size();
+        return serviceInstances.get(index);
+    }
 }

@@ -1,6 +1,7 @@
 package org.example.lb;
 
-//import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.ServiceInstance;
+import java.util.List;
 
 /**
  * @InterfaceName: LoadBalancer
@@ -9,5 +10,5 @@ package org.example.lb;
  * @create: 2020/3/7 15:55
  **/
 public interface LoadBalancer {
-//    ServiceInstance instances(List<ServiceInstance> serviceInstances);
+    ServiceInstance instances(List<ServiceInstance> serviceInstances);
 }

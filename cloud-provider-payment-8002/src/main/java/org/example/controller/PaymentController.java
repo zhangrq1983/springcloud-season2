@@ -104,19 +104,19 @@ public class PaymentController {
         return SERVER_PORT;
     }
 
-//    @GetMapping(value = "/feign/timeout")
-//    public String paymentFeignTimeout() {
-//        try {
-//            // 暂停3秒钟
-//            TimeUnit.SECONDS.sleep(3);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//        return SERVER_PORT;
-//    }
-//
-//    @GetMapping("/zipkin")
-//    public String paymentZipkin() {
-//        return "hellp zipkin";
-//    }
+    @GetMapping(value = "/feign/timeout")
+    public String paymentFeignTimeout() {
+        try {
+            // 暂停3秒钟
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return SERVER_PORT;
+    }
+
+    @GetMapping("/zipkin")
+    public String paymentZipkin() {
+        return "hellp zipkin";
+    }
 }

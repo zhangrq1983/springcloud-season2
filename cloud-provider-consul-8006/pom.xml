@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>cloud-provider-zookeeper-8004</artifactId>
+    <artifactId>cloud-provider-consul-8006</artifactId>
 
     <dependencies>
         <dependency>
@@ -31,7 +31,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -59,5 +59,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
