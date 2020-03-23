@@ -1,6 +1,7 @@
 package org.example.controller;
 
 import com.netflix.discovery.converters.Auto;
+import com.sun.media.jfxmedia.logging.Logger;
 import lombok.extern.slf4j.Slf4j;
 import org.example.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,14 +33,22 @@ public class PaymentController {
     @GetMapping("/hystrix/ok/{id}")
     public String paymentInfo_OK(@PathVariable("id") int id){
         String result = paymentService.paymentInfo_OK(id);
-        System.out.println("result = " + result);
+        log.info("result = " + result);
         return result;
     }
 
     @GetMapping("/hystrix/timeout/{id}")
     public String paymentInfo_TimeOut(@PathVariable("id") int id){
         String result = paymentService.paymentInfo_TimeOut(id);
-        System.out.println("result = " + result);
+        log.info("result = " + result);
+        return result;
+    }
+
+    //====服务熔断
+    @GetMapping("/circuit/{id}")
+    public String paymentCircuitBreaker(@PathVariable("id") int id){
+        String result = paymentService.paymentCircuitBreaker(id);
+        log.info("result = " + result);
         return result;
     }
 }
