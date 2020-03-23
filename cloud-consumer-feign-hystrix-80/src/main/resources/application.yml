@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    instance-id: consumer-feign-80
+    instance-id: consumer-feign-hystrix-80
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -18,10 +18,10 @@ ribbon:
   # 指的是建立连接后从服务器读取到可用资源所用的时间
   ConnectTimeout: 5000
 
-logging:
-  level:
-    # feign日志以什么级别监控哪个接口
-    org.example.service.PaymentFeignService: debug
+#logging:
+#  level:
+#    # feign日志以什么级别监控哪个接口
+#    org.example.service.PaymentFeignService: debug
 
 spring:
   application:

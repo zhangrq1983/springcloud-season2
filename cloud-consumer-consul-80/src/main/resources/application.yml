@@ -7,7 +7,15 @@ spring:
   cloud:
     consul:
 #      host: 192.168.0.102
+#      host: 192.168.1.176
       host: localhost
       port: 8500
       discovery:
         service-name: ${spring.application.name}
+#        hostname: 192.168.1.64
+        hostname: localhost #远程连接centos7 docker consul 时，报
+                            #There was an unexpected error (type=Internal Server Error, status=500).No instances available for provider-payment-service，
+                            #Get http://192.168.1.64:8006/actuator/health: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+                            #Get http://2BJJPMWXOP5F4WH:80/actuator/health: dial tcp: lookup 2BJJPMWXOP5F4WH on 8.8.8.8:53: no such host
+                            #所以加上 spring.cloud.consul.discovery.hostname: 192.168.1.64
+                            #如果是本地搭建consul spring.cloud.consul.discovery.hostname: localhost

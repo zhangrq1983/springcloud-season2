@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/consumer")
 public class OrderConsulController {
 
-    private static final String INVOKE_URL = "http://cloud-provider-payment";
+    private static final String INVOKE_URL = "http://provider-payment-service";
 
     @Autowired
     private RestTemplate restTemplate;

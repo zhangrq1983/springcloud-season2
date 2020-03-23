@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-api-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-eureka-server-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-eureka-server-7002/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-payment-8002/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-payment-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-zookeeper-8004/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-comsumer-zookeeper-80/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer-zookeeper-80/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-consul-8006/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer-consul-80/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer-feign-80/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-hystrix-8007/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer-feign-hystrix-80/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
