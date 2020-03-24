@@ -13,12 +13,11 @@ spring:
           search-paths:
             - season2
       label: master
-
-#rabbitmq:
-#  host: localhost
-#  port: 5672
-#  username: guest
-#  password: guest
+rabbitmq: #rabbitmq相关配置，15672是web管理端口，5672是mq访问端口
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
 
 eureka:
   client:
@@ -27,11 +26,17 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/ #入驻地址
   instance:
-    hostname: config-center-3344
+    instance-id: config-center-3344
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 1 #eureka客户端向服务端发送心跳的时间间隔 单位秒 默认30
+    lease-expiration-duration-in-seconds: 2 #eureka服务端在收到最后一次心跳后等待时间上限，单位秒 默认90秒，超时将剔除
 
-## 暴露bus刷新配置的端点
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "bus-refresh"
+# 暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
+
+#  curl -X POST "http://localhost:3344/actuator/bus-refresh"
+#  curl -X POST "http://localhost:3344/actuator/bus-refresh/config-client:3355"
