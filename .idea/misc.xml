@@ -18,6 +18,10 @@
         <option value="$PROJECT_DIR$/cloud-consumer-feign-80/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider-hystrix-8007/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-consumer-feign-hystrix-80/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer-hystrix-dashboard-9001/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-gateway-9527/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config-center-3344/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config-client-3355/pom.xml" />
       </list>
     </option>
   </component>

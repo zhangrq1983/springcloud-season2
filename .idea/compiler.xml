@@ -6,19 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-consumer-order-80" />
         <module name="cloud-provider-payment-8002" />
-        <module name="cloud-api-commons" />
-        <module name="cloud-provider-zookeeper-8004" />
-        <module name="cloud-provider-hystrix-8007" />
-        <module name="cloud-consumer-zookeeper-80" />
-        <module name="cloud-consumer-consul-80" />
         <module name="cloud-provider-payment-8001" />
+        <module name="cloud-provider-zookeeper-8004" />
         <module name="cloud-eureka-server-7002" />
         <module name="cloud-eureka-server-7001" />
         <module name="cloud-provider-consul-8006" />
-        <module name="cloud-consumer-feign-hystrix-80" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-config-client-3355" />
+        <module name="cloud-consumer-order-80" />
+        <module name="cloud-consumer-hystrix-dashboard-9001" />
+        <module name="cloud-consumer-consul-80" />
         <module name="cloud-consumer-feign-80" />
+        <module name="cloud-provider-hystrix-8007" />
+        <module name="cloud-consumer-zookeeper-80" />
+        <module name="cloud-gateway-9527" />
+        <module name="cloud-consumer-feign-hystrix-80" />
+        <module name="cloud-config-center-3344" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,12 +31,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-config-client-3355" options="" />
       <module name="cloud-consumer-consul-80" options="" />
       <module name="cloud-consumer-feign-80" options="" />
       <module name="cloud-consumer-feign-hystrix-80" options="" />
       <module name="cloud-consumer-zookeeper-80" options="" />
       <module name="cloud-eureka-server-7001" options="" />
       <module name="cloud-eureka-server-7002" options="" />
+      <module name="cloud-gateway-9527" options="" />
       <module name="cloud-provider-consul-8006" options="" />
       <module name="cloud-provider-hystrix-8007" options="" />
       <module name="cloud-provider-payment-8002" options="" />
