@@ -12,26 +12,26 @@
         <module name="cloud-eureka-server-7002" />
         <module name="cloud-eureka-server-7001" />
         <module name="cloud-provider-consul-8006" />
-        <module name="cloudalibaba-consumer-nacos-83" />
+        <module name="cloud-stream-rabbitmq-consumer-8803" />
         <module name="cloud-api-commons" />
-        <module name="cloud-config-client-3366" />
-        <module name="cloud-provider-hystrix-8007" />
+        <module name="cloud-config-client-3355" />
         <module name="cloud-consumer-order-80" />
         <module name="cloudalibaba-sentinel-service-8401" />
         <module name="cloud-consumer-hystrix-dashboard-9001" />
-        <module name="cloud-consumer-feign-hystrix-80" />
+        <module name="cloudalibaba-provider-nacos-9002" />
         <module name="cloud-gateway-9527" />
         <module name="cloud-consumer-feign-80" />
-        <module name="cloud-stream-rabbitmq-consumer-8802" />
+        <module name="cloud-stream-rabbitmq-provider-8801" />
+        <module name="cloud-provider-hystrix-8007" />
         <module name="cloud-config-center-3344" />
         <module name="cloudalibaba-config-nacos-client-3377" />
         <module name="cloud-consumer-zookeeper-80" />
-        <module name="cloud-stream-rabbitmq-provider-8801" />
-        <module name="cloud-config-client-3355" />
-        <module name="cloudalibaba-provider-nacos-9001" />
-        <module name="cloudalibaba-provider-nacos-9002" />
+        <module name="cloudalibaba-consumer-nacos-83" />
+        <module name="cloud-consumer-feign-hystrix-80" />
         <module name="cloud-consumer-consul-80" />
-        <module name="cloud-stream-rabbitmq-consumer-8803" />
+        <module name="cloudalibaba-provider-nacos-9001" />
+        <module name="cloud-config-client-3366" />
+        <module name="cloud-stream-rabbitmq-consumer-8802" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
