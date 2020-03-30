@@ -33,6 +33,7 @@
         <option value="$PROJECT_DIR$/cloudalibaba-provider-nacos-9001/pom.xml" />
         <option value="$PROJECT_DIR$/cloudalibaba-provider-nacos-9002/pom.xml" />
         <option value="$PROJECT_DIR$/cloudalibaba-config-nacos-client-3377/pom.xml" />
+        <option value="$PROJECT_DIR$/cloudalibaba-sentinel-service-8401/pom.xml" />
       </list>
     </option>
   </component>
