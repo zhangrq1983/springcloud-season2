@@ -8,9 +8,14 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>cloudalibaba-consumer-nacos-83</artifactId>
+    <artifactId>cloudalibaba-consumer-nacos-84</artifactId>
 
     <dependencies>
+        <!--SpringCloud openfeign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -22,6 +27,15 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+        <dependency><!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
+            <groupId>org.example</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
