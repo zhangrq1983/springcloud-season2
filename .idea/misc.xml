@@ -38,6 +38,7 @@
         <option value="$PROJECT_DIR$/cloudalibaba-provider-payment-9003/pom.xml" />
         <option value="$PROJECT_DIR$/cloudalibaba-provider-nacos-9004/pom.xml" />
         <option value="$PROJECT_DIR$/cloudalibaba-provider-nacos-9003/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-order-service-2001/pom.xml" />
       </list>
     </option>
   </component>
