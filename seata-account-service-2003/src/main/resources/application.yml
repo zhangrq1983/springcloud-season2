@@ -1,13 +1,12 @@
 server:
-  port: 2001
+  port: 2003
 
 spring:
   application:
-    name: seata-order-service
+    name: seata-account-service
   cloud:
     alibaba:
       seata:
-        #自定义事务组名称需要与seata-server中的对应
         tx-service-group: fsp_tx_group
     nacos:
       discovery:
@@ -15,7 +14,7 @@ spring:
   datasource:
 #    driver-class-name: com.mysql.jdbc.Driver
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/seata_order?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://localhost:3306/seata_account?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
     username: root
     password: root
 
@@ -31,6 +30,4 @@ logging:
 mybatis:
   mapperLocations: classpath:mapper/*.xml
 
-# http://localhost:2001/order/create?userId=1&productId=1&count=10&money=100
 
-# http://localhost:2001/snowflake

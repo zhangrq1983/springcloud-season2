@@ -15,8 +15,10 @@
         <module name="cloud-provider-payment-8001" />
         <module name="cloud-provider-consul-8006" />
         <module name="cloud-config-client-3366" />
+        <module name="seata-account-service-2003" />
         <module name="cloudalibaba-consumer-nacos-83" />
         <module name="seata-order-service-2001" />
+        <module name="seata-storage-service-2002" />
         <module name="cloudalibaba-provider-nacos-9004" />
         <module name="cloudalibaba-provider-nacos-9003" />
         <module name="cloudalibaba-provider-nacos-9002" />
@@ -67,7 +69,9 @@
       <module name="cloudalibaba-provider-nacos-9003" options="" />
       <module name="cloudalibaba-provider-nacos-9004" options="" />
       <module name="cloudalibaba-sentinel-service-8401" options="" />
+      <module name="seata-account-service-2003" options="" />
       <module name="seata-order-service-2001" options="" />
+      <module name="seata-storage-service-2002" options="" />
     </option>
   </component>
 </project>
